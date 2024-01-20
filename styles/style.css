@@ -1,0 +1,258 @@
+html {
+  scroll-behavior: auto !important;
+}
+:root {
+  scroll-behavior: auto !important;
+}
+
+/* ===== Start Sidebar ===== */
+.sidebar {
+  position: fixed;
+  left: 0;
+  background-color: #000;
+  color: #333;
+  height: 100vh;
+  width: 250px;
+  padding: 100px 20px 0 20px;
+  transition: 0.3s;
+}
+
+.sidebar .sidebarLinks div {
+  margin-bottom: 15px;
+  font-size: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.sidebar .sidebarLinks div i {
+  width: 30px;
+  text-align: center;
+}
+
+.sidebar .sidebarLinks a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar .sidebarLinks div:hover span a {
+  color: rgba(250, 0, 0, 0.4) !important;
+}
+
+.sidebar .openSidebar {
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  width: 50px;
+  height: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #333;
+}
+.sidebar .openSidebar i {
+  font-size: 25px;
+}
+.sidebar .openSidebar:hover i {
+  color: rgba(250, 0, 0, 0.4);
+}
+/* ===== End Sidebar ===== */
+
+/* ===== Start Header  ===== */
+.head {
+  background-image: linear-gradient(
+      0deg,
+      rgba(250, 0, 0, 0.4),
+      rgba(250, 0, 0, 0.4)
+    ),
+    url(../images/events-heavenly-header.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.head .content h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.head .content P {
+  font-size: 20px;
+}
+/* ===== End Header  ===== */
+
+/* ===== Start Accordion  ===== */
+
+.accordion .box h3 {
+  cursor: pointer;
+  background-color: #e68184;
+  color: white;
+}
+
+.accordion .box .content {
+  display: none;
+  background-color: #eee;
+  padding: 30px;
+}
+/* ===== End Accordion  ===== */
+
+/* ===== Start Counter ===== */
+.counter {
+  background-image: linear-gradient(
+      0deg,
+      rgba(250, 0, 0, 0.4),
+      rgba(250, 0, 0, 0.4)
+    ),
+    url(../images/invitation.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.counter .content > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 5px;
+  width: 250px;
+  flex-grow: 1;
+}
+
+/* ===== End Counter ===== */
+
+/* ===== Start Contact  ===== */
+.contact h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #333;
+}
+.contact .content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+.contact .content .box {
+  width: 48%;
+}
+
+@media (max-width: 992px) {
+  .contact .content .box {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.contact .content .box h5 {
+  font-weight: bold;
+}
+.contact .content .box p {
+  font-size: 17px;
+}
+.contact .content .box .info {
+  margin: 20px 0;
+}
+
+.contact .content .box .info div {
+  margin-bottom: 15px;
+}
+
+.contact .content .box .info div span:first-child {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #555;
+  transition: 0.5s;
+}
+
+.contact .content .box .info div span:first-child:hover {
+  color: #000;
+}
+
+.contact .content .box .info div span:last-child {
+  font-size: 18px;
+}
+
+.contact .content .box .social-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.contact .content .box .social-icons i {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  transition: 0.5s;
+  border: 1px solid #999;
+  text-align: center;
+}
+
+.contact .content .box .social-icons i:hover {
+  color: #fff;
+  background-color: #d62e33;
+  border: 1px solid #d62e33;
+}
+.contact .content .box form input {
+  margin-bottom: 15px;
+}
+.contact .content .box form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact .content .box p.countDown {
+  margin-top: 15px;
+}
+.contact .content .box p.countDown span {
+  color: #d62e33 !important;
+  font-weight: 500;
+}
+.contact .content .box button {
+  background-color: #d62e33;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+  border: none;
+}
+.progressBar{
+  display: block;  position: relative;  top: -4px;
+  height: 3px;  background-color: #d62e33;  transition: 0.5s;
+  width: 0;
+}
+/* ===== End Contact  ===== */
